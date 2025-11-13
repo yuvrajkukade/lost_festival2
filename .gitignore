@@ -1,0 +1,28 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Editor settings
+.vscode/
+*.code-workspace
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Logs and temp
+*.log
+*.tmp
+
+# Package-lock / lockfiles if you manage elsewhere
+npm-debug.log*
+/yarn-error.log
+
+# Ignore IDE metadata
+.idea/

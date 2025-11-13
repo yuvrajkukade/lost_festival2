@@ -1,0 +1,87 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Festivals - Lost Festival</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="hero">
+    <img src="images/banner.jpg" alt="Festival banner" class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <img src="images/logo.png" alt="Lost Festival logo" class="logo">
+      <h1>Festivals</h1>
+      <p>Discover local festivals and events</p>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="section-head">
+      <h1>All Festivals</h1>
+      <p class="muted">Filter and explore unique regional celebrations.</p>
+    </div>
+
+    <div class="controls">
+      <input id="search-input" type="search" placeholder="Search festivals (e.g., Phool Dei)" />
+      <select id="filter-state">
+        <option value="">All States</option>
+        <option value="Uttarakhand">Uttarakhand</option>
+        <option value="Assam">Assam</option>
+        <option value="Kerala">Kerala</option>
+      </select>
+    </div>
+
+    <div id="festival-grid" class="grid">
+      <!-- Sample festival card using phooldei image -->
+      <article class="card">
+        <img src="images/phooldei.png" class="card-img" alt="Phooldei festival" />
+        <div class="card-body">
+          <h3>Phooldei</h3>
+          <p class="muted">A flower celebration from the Himalayan foothills. Traditionally observed with family gatherings and floral offerings.</p>
+          <p><strong>State:</strong> Uttarakhand</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Pola section with links to dedicated Pola pages -->
+    <section id="pola-section" class="section">
+      <div class="wrap">
+        <h2>Pola — Nagpur</h2>
+        <p class="muted">Click the images to view dedicated Pola pages.</p>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="images/logo.png" alt="" class="logo-sm"> Lost Festival</a>
+        <p class="muted">Preserving India’s hidden celebrations.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="muted">hello@lostfestival.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Lost Festival</div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/festival.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

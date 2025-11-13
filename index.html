@@ -1,0 +1,141 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lost Festival — Explore India's Hidden Celebrations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- ================= Header / Navbar ================= -->
+  <header class="navbar" id="top-nav">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="images/logo.png" alt="Lost Festival logo" class="logo">
+        <span>Lost Festival</span>
+      </a>
+      <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+      <nav class="menu" id="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= Hero Section ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <!-- Use video if available, else fallback image -->
+      <video autoplay muted loop playsinline poster="images/banner/hero.jpg">
+        <source src="images/banner/hero.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
+
+    <div class="hero-content container" data-aos="fade-up" data-aos-duration="900">
+      <h1>Rediscover the Lost Festivals of India</h1>
+      <p class="lead">
+        Journey through forgotten rituals, melodies, and colors that still echo across India’s villages and valleys.
+      </p>
+      <a href="festivals.html" class="btn primary">Start Exploring</a>
+    </div>
+  </section>
+
+  <!-- ================= Intro Section ================= -->
+  <section class="intro container" data-aos="fade-up" data-aos-delay="200">
+    <h2>Why Discover the Lost?</h2>
+    <p class="section-desc">
+      India’s cultural map holds thousands of regional celebrations — some nearly forgotten. 
+      <strong>Lost Festival</strong> curates these traditions to inspire conscious travel and cultural revival.
+    </p>
+  </section>
+
+  <!-- ================= Featured Festivals ================= -->
+  <section class="featured container" data-aos="fade-up" data-aos-delay="300">
+    <div class="section-header">
+      <h2>Featured Festivals</h2>
+      <p>Experience a glimpse of India’s lesser-known celebrations.</p>
+    </div>
+
+    <div class="festival-grid" id="featured-list">
+      <!-- JS populates festival cards -->
+    </div>
+
+    <div class="center">
+      <a href="festivals.html" class="btn outline">View All Festivals</a>
+    </div>
+  </section>
+
+  <!-- ================= Travel Inspiration ================= -->
+  <section class="journey" data-aos="fade-up" data-aos-delay="350">
+    <div class="container journey-inner">
+      <div class="journey-text">
+        <h2>Travel Beyond the Usual</h2>
+        <p>
+          Explore villages, mountains, and coasts where time slows down and stories bloom.  
+          Meet people who keep ancient customs alive through dance, food, and devotion.
+        </p>
+        <a href="about.html" class="btn secondary">Our Story</a>
+      </div>
+      <div class="journey-image">
+        <img src="images/banner/journey.jpg" alt="Festival journey">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Call to Action ================= -->
+  <section class="cta" data-aos="zoom-in">
+    <div class="container cta-inner">
+      <h2>Have a story or photo to share?</h2>
+      <p>Contribute to our growing archive of India’s forgotten festivals.</p>
+      <a href="contact.html" class="btn light">Contribute Now</a>
+    </div>
+  </section>
+
+  <!-- ================= Footer ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <a href="index.html" class="brand">
+          <img src="images/logo.png" alt="logo" class="logo-sm"> Lost Festival
+        </a>
+        <p>Preserving India’s unseen festivals for curious travelers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Lost Festival — All Rights Reserved
+    </div>
+  </footer>
+
+  <!-- Scroll Top Button -->
+  <button id="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- ================= Scripts ================= -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script src="js/data.js"></script>
+  <script src="js/festival.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
