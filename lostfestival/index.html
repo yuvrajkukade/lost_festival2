@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,61 +6,78 @@
   <title>Lost Festival — Preserving India's Hidden Celebrations</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
   <!-- Navigation -->
-  <header class="site-header">
-    <div class="wrap">
+  <header class="site-header enhanced-glass">
+    <div class="wrap nav-wrap">
       <a class="brand" href="index.html">
         <img src="images/logo.png" alt="Lost Festival Logo" class="logo">
         <span class="brand-text">Lost Festival</span>
       </a>
+
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
         <a href="festivals.html">Festivals</a>
         <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn btn-outline" style="padding:0.4rem 0.8rem; border-radius:999px;">Login</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero cinematic-hero">
     <div class="hero-inner wrap">
-      <h1>Preserving India's Hidden Celebrations</h1>
-      <p class="subtitle">Discover forgotten festivals, untold stories, and cultural traditions waiting to be explored.</p>
+
+      <h1 class="hero-title">
+        Preserving India's Hidden Celebrations
+      </h1>
+
+      <p class="subtitle">
+        Discover forgotten festivals, untold stories, and cultural traditions waiting to be explored.
+      </p>
+
       <div class="hero-cta">
-        <a href="festivals.html" class="btn btn-primary">Explore Festivals</a>
+        <a href="festivals.html" class="btn btn-primary glow-btn">Explore Festivals</a>
         <a href="contact.html" class="btn btn-outline">Contribute</a>
       </div>
+
     </div>
   </section>
 
   <!-- Featured Festivals Section -->
   <section class="section wrap">
-    <h2>Featured Festivals</h2>
-    <p class="muted">A curated selection from our growing archive of India's lesser-known celebrations.</p>
-    <div id="featured-grid" class="grid"></div>
+    <h2 class="section-title">Featured Festivals</h2>
+    <p class="muted section-sub">A curated selection from our growing archive of India's lesser-known celebrations.</p>
+
+    <div id="featured-grid" class="grid enhanced-grid"></div>
+
     <div style="text-align: center; margin-top: 2rem;">
       <a href="festivals.html" class="btn btn-ghost">View All Festivals</a>
     </div>
   </section>
 
   <!-- Why Section -->
-  <section class="section" style="background: linear-gradient(135deg, rgba(255, 75, 43, 0.03), rgba(255, 65, 108, 0.03));">
+  <section class="section soft-bg">
     <div class="wrap">
-      <h2 style="text-align: center; margin-bottom: 3rem;">Why Preserve These Festivals?</h2>
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
-        <div style="text-align: center; padding: 2rem;">
-          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎭</div>
+      <h2 class="section-title center">Why Preserve These Festivals?</h2>
+
+      <div class="grid feature-cards">
+        <div class="feature-card">
+          <div class="feature-icon">🎭</div>
           <h3>Cultural Heritage</h3>
           <p class="muted">Each festival carries generations of traditions, rituals, and stories unique to its region.</p>
         </div>
-        <div style="text-align: center; padding: 2rem;">
-          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🗺️</div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🗺️</div>
           <h3>Community Connection</h3>
           <p class="muted">Help travelers discover authentic experiences and support local communities directly.</p>
         </div>
-        <div style="text-align: center; padding: 2rem;">
-          <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎧</div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🎧</div>
           <h3>Stories & Sounds</h3>
           <p class="muted">Audio archives and oral histories bring these celebrations to life in vibrant detail.</p>
         </div>
@@ -69,35 +86,43 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer enhanced-footer">
     <div class="wrap footer-grid">
+
       <div>
         <a class="brand" href="index.html">
-          <img src="images/logo.png" alt="Logo" class="logo" style="width: 30px; height: 30px;">
+          <img src="images/logo.png" alt="Logo" class="logo small-logo">
           <span class="brand-text">Lost Festival</span>
         </a>
-        <p class="muted" style="color: rgba(255,255,255,0.7); margin-top: 0.5rem;">Preserving India's cultural treasures.</p>
+        <p class="muted footer-text">Preserving India's cultural treasures.</p>
       </div>
+
       <div>
-        <h4 style="color: white;">Explore</h4>
+        <h4>Explore</h4>
         <nav class="footer-nav">
           <a href="index.html">Home</a>
           <a href="festivals.html">All Festivals</a>
           <a href="contact.html">Get Involved</a>
         </nav>
       </div>
+
       <div>
-        <h4 style="color: white;">Connect</h4>
-        <p class="muted" style="color: rgba(255,255,255,0.7);">Have a hidden festival to share? <a href="contact.html" style="color: #ffa500; text-decoration: none;">Tell us</a></p>
+        <h4>Connect</h4>
+        <p class="muted">Have a hidden festival to share?
+          <a href="contact.html" class="footer-link">Tell us</a>
+        </p>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <p style="margin: 0;">© 2025 Lost Festival. Dedicated to preserving India's cultural heritage.</p>
+      <p>© 2025 Lost Festival. Dedicated to preserving India's cultural heritage.</p>
     </div>
   </footer>
 
   <script src="js/data.js"></script>
   <script src="js/festival.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
