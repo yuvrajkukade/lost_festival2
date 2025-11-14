@@ -1,7 +1,0 @@
-/* additional responsive tweaks */
-@media (max-width:480px){
-  .hero{height:64vh}
-  .card img{height:160px}
-  .controls input[type="search"]{width:100%}
-  .brand-text{display:none}
-}

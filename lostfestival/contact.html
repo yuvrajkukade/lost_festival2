@@ -1,116 +1,172 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Lost Festival</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Contribute — Lost Festival</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"> <span class="brand-text">Lost Festival</span></a>
-      <button id="btn-burger-5" class="burger" aria-label="Toggle menu">☰</button>
-      <nav id="main-nav-5" class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="festivals.html" class="nav-link">Festivals</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Lost Festival Logo" class="logo">
+        <span class="brand-text">Lost Festival</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="festivals.html">Festivals</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap section contact-section">
-    <header class="section-head">
-      <h1>Contact & Contribute</h1>
-      <p class="muted">Share festival stories, photos or tips — we review and credit contributors. Use the form or reach us via email and social.</p>
-    </header>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-inner wrap">
+      <h1>Get Involved</h1>
+      <p class="subtitle">Share stories, photos, and insights about India's hidden festivals with our community.</p>
+    </div>
+  </section>
 
-    <div class="contact-layout">
-      <aside class="contact-aside">
-        <div class="contact-card">
-          <h3>Get in touch</h3>
-          <p class="muted">We love hearing from festival-goers, researchers and photographers.</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:hello@lostfestival.com">hello@lostfestival.com</a></li>
-            <li><strong>Press:</strong> <a href="mailto:press@lostfestival.com">press@lostfestival.com</a></li>
-            <li><strong>Head office:</strong> Nagpur, Maharashtra</li>
-          </ul>
-        </div>
-
-        <div class="contact-card">
-          <h4>Follow us</h4>
-          <p class="muted">Updates, photos and behind-the-scenes.</p>
-          <div class="socials">
-            <a class="btn btn-outline" href="#">Twitter</a>
-            <a class="btn btn-outline" href="#">Instagram</a>
-            <a class="btn btn-outline" href="#">Facebook</a>
+  <!-- Main Content -->
+  <main class="section wrap" style="max-width: 900px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
+      <!-- Contact Information -->
+      <aside>
+        <h2>Connect With Us</h2>
+        
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-body">
+            <h3>Email</h3>
+            <p class="muted">Have a festival story? Send us details, photos, or links.</p>
+            <a href="mailto:hello@lostfestival.com" style="text-decoration: none; color: #ff4b2b; font-weight: 500;">hello@lostfestival.com</a>
           </div>
         </div>
 
-        <div class="contact-card">
-          <h4>Visit</h4>
-          <div class="map-placeholder" role="img" aria-label="Map placeholder">Map preview</div>
-          <p class="muted">Use the map preview to find nearby festival locations. (Static placeholder in this demo.)</p>
+        <div class="card" style="margin-bottom: 1.5rem;">
+          <div class="card-body">
+            <h3>Press Inquiries</h3>
+            <p class="muted">Media and collaboration requests.</p>
+            <a href="mailto:press@lostfestival.com" style="text-decoration: none; color: #ff4b2b; font-weight: 500;">press@lostfestival.com</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h3>Follow Us</h3>
+            <p class="muted">Stay updated with new discoveries.</p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="#" class="btn btn-ghost" style="flex: 1; text-align: center; padding: 0.5rem;">Twitter</a>
+              <a href="#" class="btn btn-ghost" style="flex: 1; text-align: center; padding: 0.5rem;">Instagram</a>
+              <a href="#" class="btn btn-ghost" style="flex: 1; text-align: center; padding: 0.5rem;">Facebook</a>
+            </div>
+          </div>
         </div>
       </aside>
 
-      <section class="contact-main">
-        <div class="contact-card form-card">
-          <h3>Send us a message</h3>
-          <form id="contact-form" class="contact-form">
-            <div class="form-row">
-              <input type="text" name="name" placeholder="Your name" required />
-              <input type="email" name="email" placeholder="Your email" required />
+      <!-- Contact Form -->
+      <section>
+        <h2>Send us a message</h2>
+        <form id="contact-form" class="card">
+          <div class="card-body">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
             </div>
-            <div class="form-row">
-              <input type="text" name="fest" placeholder="Festival name (optional)" />
-              <input type="text" name="location" placeholder="Location (city/state)" />
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
             </div>
-            <textarea name="message" rows="6" placeholder="Tell us about the festival or attach a link..." required></textarea>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Send Message</button>
-              <button type="reset" class="btn btn-outline">Reset</button>
+
+            <div class="form-group">
+              <label for="festival">Festival Name (if applicable)</label>
+              <input type="text" id="festival" name="festival" placeholder="e.g., Hornbill Festival">
             </div>
-            <p id="contact-msg" class="muted" aria-live="polite"></p>
-          </form>
-        </div>
+
+            <div class="form-group">
+              <label for="location">Location / State</label>
+              <input type="text" id="location" name="location" placeholder="e.g., Nagaland">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Tell us about the festival, share photos, or provide a link..."></textarea>
+            </div>
+
+            <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+              <button type="submit" class="btn btn-primary" style="flex: 1;">Send Message</button>
+              <button type="reset" class="btn btn-outline" style="flex: 1;">Clear</button>
+            </div>
+
+            <p id="contact-msg" class="muted" style="margin-top: 1rem; text-align: center; min-height: 1.5rem;"></p>
+          </div>
+        </form>
       </section>
     </div>
+
+    <!-- Why Contribute Section -->
+    <section style="background: linear-gradient(135deg, rgba(255, 75, 43, 0.03), rgba(255, 65, 108, 0.03)); padding: 2rem; border-radius: 16px; margin-top: 3rem;">
+      <h2 style="text-align: center; margin-bottom: 2rem;">Why Contribute?</h2>
+      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+        <div>
+          <h3>📸 Preserve History</h3>
+          <p class="muted">Your photos and stories help document these celebrations for future generations.</p>
+        </div>
+        <div>
+          <h3>🤝 Support Communities</h3>
+          <p class="muted">More awareness means more visitors, which supports local economies and cultural pride.</p>
+        </div>
+        <div>
+          <h3>✨ Get Featured</h3>
+          <p class="muted">Contributors are credited and featured in our archive, reaching thousands of culture enthusiasts.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="brand" href="index.html"><img src="images/logo.png" alt="" class="logo-sm"> Lost Festival</a>
-        <p class="muted">Preserving India’s hidden celebrations.</p>
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo" style="width: 30px; height: 30px;">
+          <span class="brand-text">Lost Festival</span>
+        </a>
+        <p class="muted" style="color: rgba(255,255,255,0.7); margin-top: 0.5rem;">Preserving India's cultural treasures.</p>
       </div>
       <div>
-        <h4>Navigate</h4>
+        <h4 style="color: white;">Explore</h4>
         <nav class="footer-nav">
           <a href="index.html">Home</a>
-          <a href="festivals.html">Festivals</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="festivals.html">All Festivals</a>
+          <a href="contact.html">Get Involved</a>
         </nav>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p class="muted">hello@lostfestival.com</p>
+        <h4 style="color: white;">Connect</h4>
+        <p class="muted" style="color: rgba(255,255,255,0.7);">Have a hidden festival to share? <a href="contact.html" style="color: #ffa500; text-decoration: none;">Tell us</a></p>
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Lost Festival</div>
+    <div class="footer-bottom">
+      <p style="margin: 0;">© 2025 Lost Festival. Dedicated to preserving India's cultural heritage.</p>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
   <script>
-    // Simple client-side form mock (no backend)
-    document.getElementById('contact-form').addEventListener('submit', function(e){
+    // Simple client-side form handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
-      document.getElementById('contact-msg').textContent = 'Thanks! Your message was received (demo).';
-      this.reset();
+      const msg = document.getElementById('contact-msg');
+      msg.textContent = '✓ Thank you! Your message has been received. We\'ll get back to you soon.';
+      msg.style.color = '#22c55e';
+      setTimeout(() => {
+        this.reset();
+        msg.textContent = '';
+      }, 3000);
     });
   </script>
 </body>

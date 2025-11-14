@@ -1,52 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Festival — Lost Festival</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival Details — Lost Festival</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><img src="images/logo.png" alt="logo" class="logo"> <span class="brand-text">Lost Festival</span></a>
-      <button id="btn-burger-3" class="burger" aria-label="Toggle menu">☰</button>
-      <nav id="main-nav-3" class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="festivals.html" class="nav-link">Festivals</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="Lost Festival Logo" class="logo">
+        <span class="brand-text">Lost Festival</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="festivals.html" class="active">Festivals</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="wrap section" id="detail-wrap">
-    <!-- festival details inserted by js -->
+  <!-- Main Content -->
+  <main id="detail-wrap" class="section wrap">
+    <!-- Festival details will be inserted here by JavaScript -->
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="brand" href="index.html"><img src="images/logo.png" alt="" class="logo-sm"> Lost Festival</a>
-        <p class="muted">Preserving India’s hidden celebrations.</p>
+        <a class="brand" href="index.html">
+          <img src="images/logo.png" alt="Logo" class="logo" style="width: 30px; height: 30px;">
+          <span class="brand-text">Lost Festival</span>
+        </a>
+        <p class="muted" style="color: rgba(255,255,255,0.7); margin-top: 0.5rem;">Preserving India's cultural treasures.</p>
       </div>
       <div>
-        <h4>Navigate</h4>
+        <h4 style="color: white;">Explore</h4>
         <nav class="footer-nav">
           <a href="index.html">Home</a>
-          <a href="festivals.html">Festivals</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="festivals.html">All Festivals</a>
+          <a href="contact.html">Get Involved</a>
         </nav>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p class="muted">hello@lostfestival.example</p>
+        <h4 style="color: white;">Connect</h4>
+        <p class="muted" style="color: rgba(255,255,255,0.7);">Know a hidden festival? <a href="contact.html" style="color: #ffa500; text-decoration: none;">Share it</a></p>
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Lost Festival</div>
+    <div class="footer-bottom">
+      <p style="margin: 0;">© 2025 Lost Festival. Dedicated to preserving India's cultural heritage.</p>
+    </div>
   </footer>
 
   <script src="js/data.js"></script>
