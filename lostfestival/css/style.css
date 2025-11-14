@@ -404,6 +404,35 @@ p {
   text-align: center;
 }
 
+/* Make festival buttons colorful and prominent */
+.card .btn,
+.grid .btn,
+.featured .btn {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(255, 65, 108, 0.18);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, opacity 0.22s ease;
+  display: inline-block;
+}
+
+.card .btn:hover,
+.grid .btn:hover,
+.featured .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(255, 65, 108, 0.24);
+  opacity: 0.98;
+}
+
+/* Ensure any btn-outline inside a card becomes a filled festival CTA */
+.card .btn.btn-outline {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+}
+
 /* Grid */
 .grid {
   display: grid;
