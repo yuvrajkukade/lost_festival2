@@ -232,6 +232,31 @@ p {
   background-repeat: no-repeat;
 }
 
+/* Hero top background (upper decorative layer) */
+.hero-top-background {
+  position: relative;
+}
+
+.hero-top-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background-image: linear-gradient(180deg, rgba(255,255,255,0.08), transparent), url('../images/back2.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-top-background .hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-inner {
   position: relative;
   z-index: 2;
