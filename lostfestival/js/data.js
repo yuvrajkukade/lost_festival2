@@ -45,4 +45,16 @@ const FESTIVALS = [
     howToReach: 'Nearest city: Nagpur. Local buses and taxis available; rural village access may require a short drive.',
     audio: ''
   }
+  ,
+  {
+    slug: 'marbat-festival',
+    name: 'marbat',
+    state: 'Maharashtra',
+    month: 'September',
+  image: 'images/pola1.png',
+    short: 'A cattle-worship festival where farmers honor their bulls and oxen.',
+    description: 'Pola is a traditional Maharashtrian festival celebrating the contribution of bulls and oxen to farming. Farmers decorate their animals, offer prayers, and parade them through villages. In Nagpur and surrounding districts, the festival is marked with community gatherings and folk songs.',
+    howToReach: 'Nearest city: Nagpur. Local buses and taxis available; rural village access may require a short drive.',
+    audio: ''
+  }
 ];
