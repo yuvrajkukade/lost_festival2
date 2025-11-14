@@ -223,6 +223,15 @@ p {
   border-radius: 50%;
 }
 
+/* Festivals page hero with user-provided background (images/back1.jpg) */
+.festivals-hero {
+  background-color: transparent; /* fallback */
+  background-image: linear-gradient(180deg, rgba(255,75,43,0.12), rgba(255,65,108,0.06)), url('../images/back1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero-inner {
   position: relative;
   z-index: 2;
